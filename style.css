@@ -1,0 +1,94 @@
+/* Global styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Navigation bar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #34495e;
+    padding: 1rem 2rem;
+    color: white;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Layout using Flexbox */
+  .container {
+    display: flex;
+    gap: 20px;
+    padding: 2rem;
+  }
+  
+  /* Content and sidebar */
+  .content {
+    flex: 2;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+  }
+  
+  .sidebar {
+    flex: 1;
+    background: #ecf0f1;
+    padding: 1.5rem;
+    border-radius: 8px;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-links {
+      width: 100%;
+    }
+  
+    .nav-links li {
+      width: 100%;
+    }
+  }
+  
